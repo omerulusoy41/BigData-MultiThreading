@@ -52,9 +52,6 @@ public class Factory {
 						break;
 					}
 		}
-		if (wordOfRow1.length > wordOfRow2.length) 
-			return ((float)same / wordOfRow1.length)*100 ;
-		else
-			return ((float)same / wordOfRow2.length)*100;
+		return (wordOfRow1.length > wordOfRow2.length) ? ((float)same / wordOfRow1.length)*100 : ((float)same / wordOfRow2.length)*100;
 	}
 }
